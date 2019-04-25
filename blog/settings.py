@@ -25,7 +25,7 @@ SECRET_KEY = 'fea^)nit)(ta@7ox!2+6!xn8y7q*m+1*los#7rery39znr24i6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-blog-derekstudentbcs.c9users.io']
+ALLOWED_HOSTS = [os.environ.get("C9_HOSTNAME"), '127.0.0.1']
 
 
 # Application definition
